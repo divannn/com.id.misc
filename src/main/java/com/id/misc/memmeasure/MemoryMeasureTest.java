@@ -27,7 +27,7 @@ public class MemoryMeasureTest {
      */
     private static long countSizeApprox(ObjectGraphMeasurer.Footprint footprint, boolean is32bitVM) {
         int pointerSize = is32bitVM ? 4 : 8;
-        int headerSize = 2 * 4;
+        int headerSize = 8;
         ImmutableMultiset primitives = footprint.getPrimitives();
         long memory = footprint.getObjects() * headerSize + footprint.getReferences() * pointerSize +
                 primitives.count(byte.class) * 1 +
