@@ -11,8 +11,7 @@ import java.util.LinkedHashMap;
  */
 public class MemoryMeasureTest {
     public static void main(String[] args) {
-        LinkedHashMap<Integer, String> lhm = new LinkedHashMap<Integer, String>();
-        //Object a = new A();
+       //Object a = new A();
         Object a = new LinkedHashMap<Integer,String>();
         ObjectGraphMeasurer.Footprint fp = ObjectGraphMeasurer.measure(a);
         long size = MemoryMeasurer.measureBytes(a);
@@ -27,7 +26,7 @@ public class MemoryMeasureTest {
      */
     private static long countSizeApprox(ObjectGraphMeasurer.Footprint footprint, boolean is32bitVM) {
         int pointerSize = is32bitVM ? 4 : 8;
-        int headerSize = 8;
+        int headerSize = is32bitVM ? 8 : 16;
         ImmutableMultiset primitives = footprint.getPrimitives();
         long memory = footprint.getObjects() * headerSize + footprint.getReferences() * pointerSize +
                 primitives.count(byte.class) * 1 +
