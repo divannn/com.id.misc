@@ -24,6 +24,7 @@ public class MemoryMeasureTest {
      * @param is32bitVM
      * @return size in bytes
      */
+    //TODO: check for arrays, they have additional system fields (for storing size, for example).
     private static long countSizeApprox(ObjectGraphMeasurer.Footprint footprint, boolean is32bitVM) {
         int pointerSize = is32bitVM ? 4 : 8;
         int headerSize = is32bitVM ? 8 : 16;
