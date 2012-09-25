@@ -1,4 +1,4 @@
-package com.id.misc.com.id.misc.jscp;
+package com.id.misc.jscp;
 
 
 public class OperandCalculation {

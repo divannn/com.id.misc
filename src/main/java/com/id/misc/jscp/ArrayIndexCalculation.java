@@ -1,7 +1,7 @@
-package com.id.misc.com.id.misc.jscp;
+package com.id.misc.jscp;
 
 
-public class ArrayNPE {
+public class ArrayIndexCalculation {
     public static void main(String[] args) throws Exception {
         int[] a = null;
         //NPE won't happen here as index calculation is going first. So "Another Exception" will happen.
