@@ -27,7 +27,7 @@ public class MemoryMeasureTest {
         Object arr2 = new int[10][100][1000];
         ObjectGraphMeasurer.Footprint fp1 = ObjectGraphMeasurer.measure(arr1);
         ObjectGraphMeasurer.Footprint fp2 = ObjectGraphMeasurer.measure(arr2);
-        System.err.println("arr2 " + fp1 + "   size: " + MemoryMeasurer.measureBytes(arr1));
+        System.err.println("arr1 " + fp1 + "   size: " + MemoryMeasurer.measureBytes(arr1));
         System.err.println("arr2 " + fp2 + "   size: " + MemoryMeasurer.measureBytes(arr2));
     }
 
