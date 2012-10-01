@@ -6,11 +6,23 @@ import java.lang.reflect.Field;
 public class UseIntegerCache {
     static {
         //Write some code here to pass assertion.
-        hack();
+        viaIntegerField();
+        //viaIntegerCache(); //same effect.
     }
 
-    private static void hack() {
-        ///use class Integer.IntegerCache and its memeber 'cache'
+    private static void viaIntegerField() {
+        try {
+            Field field = Integer.class.getDeclaredField("value");
+            field.setAccessible(true);
+            field.setInt(Integer.valueOf(20), 30);
+        } catch (Throwable t) {
+            t.printStackTrace();
+        }
+    }
+
+    //via Integer cache.
+    private static void viaIntegerCache() {
+        ///use class Integer.IntegerCache and its member 'cache'
         try {
             Class<?>[] declaredClasses = Integer.class.getDeclaredClasses();
             Field cacheField = declaredClasses[0].getDeclaredField("cache");
