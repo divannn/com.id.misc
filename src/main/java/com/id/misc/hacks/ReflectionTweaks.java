@@ -3,7 +3,7 @@ package com.id.misc.hacks;
 import java.lang.reflect.Field;
 
 //Don't forget to enable assertion (-ea option for JVM).
-public class UseIntegerCache {
+public class ReflectionTweaks {
     static {
         //Write some code here to pass assertion.
         viaIntegerField();
