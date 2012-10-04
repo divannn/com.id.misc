@@ -59,7 +59,14 @@ public class MemoryMeasureTest {
 }
 
 class A {
-    //A a1;
-    //A a2;
-    private int a;
+
+    private boolean a1;
+    private boolean a2;
+    private boolean a3;
+    private boolean a4;
+
+    private boolean a5;
+    private boolean a6;
+    private boolean a7;
+    private boolean a8;
 }
