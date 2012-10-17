@@ -1,4 +1,4 @@
-package com.id.misc.systemproperties;
+package com.id.misc.assorted;
 
 public class SystemProperties {
     public static void main(String[] args) {

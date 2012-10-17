@@ -3,27 +3,18 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.id</groupId>
-	<artifactId>misc</artifactId>
-	<packaging>jar</packaging>
-	<name>Misc</name>
+	<groupId>com.id.misc</groupId>
+	<artifactId>main</artifactId>
+	<packaging>pom</packaging>
+	<name>main</name>
 	<version>1.0-SNAPSHOT</version>
 
-	<dependencies>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>13.0.1</version>
-        </dependency>
-        <dependency>
-            <groupId>objectexplorer</groupId>
-            <artifactId>objectexplorer</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/object-explorer.jar</systemPath>
-        </dependency>
-	</dependencies>
-
+    <modules>
+        <module>hacks</module>
+        <module>jscp</module>
+        <module>memmeasure</module>
+        <module>assorted</module>
+    </modules>
 
     <build>
         <pluginManagement>
@@ -66,42 +57,4 @@
 		</plugins>
     </build>
 
-    <profiles>
-        <profile>
-            <id>addsrc</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-source-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <profile>
-            <id>addjavadoc</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 </project>

@@ -1,4 +1,4 @@
-package com.id.misc;
+package com.id.misc.assorted;
 
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
