@@ -13,6 +13,7 @@
         <module>hacks</module>
         <module>jscp</module>
         <module>memmeasure</module>
+        <module>xml_csv</module>
         <module>assorted</module>
     </modules>
 

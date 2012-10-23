@@ -20,7 +20,7 @@ public class MemoryMeasureTest {
         testMultiDimArray();
     }
 
-    // arrays hold same data space (1,000,000 integers) but take different size in memory in 1.5 times.
+    // arrays hold same model space (1,000,000 integers) but take different size in memory in 1.5 times.
     // cool!!!
     private static void testMultiDimArray() {
         Object arr1 = new int[1000][100][10];
