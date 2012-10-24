@@ -5,7 +5,6 @@
 
 	<artifactId>xml_csv</artifactId>
 	<packaging>jar</packaging>
-	<name>xml_csv</name>
 
     <parent>
         <groupId>com.id.misc</groupId>

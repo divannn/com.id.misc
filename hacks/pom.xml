@@ -5,7 +5,6 @@
 
 	<artifactId>hacks</artifactId>
 	<packaging>jar</packaging>
-	<name>hacks</name>
 
     <parent>
         <groupId>com.id.misc</groupId>
