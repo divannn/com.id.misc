@@ -15,6 +15,7 @@
         <module>memmeasure</module>
         <module>xml_csv</module>
         <module>singleton</module>
+        <module>restart-app</module>
         <module>assorted</module>
     </modules>
 
