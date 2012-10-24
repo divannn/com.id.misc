@@ -18,7 +18,7 @@ public class ConvertFile2URLDemo {
 		File file = new File("C:\\Documents and Settings");
 		// works improperly.
 		System.out.println("file.toURL() ----> " + file.toURL());
-		// works normally escaping all special charaters.
+		// works normally. escaping all special characters.
 		System.out.println("file.toURI().toURL() ----> " + file.toURI().toURL());
 	}
 }
