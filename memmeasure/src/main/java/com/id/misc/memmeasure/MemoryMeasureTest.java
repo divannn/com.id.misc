@@ -4,8 +4,6 @@ import com.google.common.collect.ImmutableMultiset;
 import objectexplorer.MemoryMeasurer;
 import objectexplorer.ObjectGraphMeasurer;
 
-import java.util.LinkedHashMap;
-
 /**
  * To use MemoryMeasurer object-explorer.jar must be specified as javaagent.
  */
@@ -32,7 +30,9 @@ public class MemoryMeasureTest {
     }
 
 
-    /** My own version.
+    /**
+     * My own version.
+     *
      * @param footprint
      * @param is32bitVM
      * @return size in bytes
