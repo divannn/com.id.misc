@@ -2,7 +2,7 @@ package com.id.misc.singleton;
 
 /**
  * Via double checked locking.
- * Thread safe in Java 5+ (volatile has strong memaning since Java5).
+ * Thread safe in Java 5+ (volatile has strong meaning since Java5).
  *
  * @author idanilov
  */
