@@ -3,6 +3,7 @@ package com.id.misc.singleton;
 /**
  * Via enum.
  * Thread safe.
+ * Lazy.
  *
  * @author idanilov
  */

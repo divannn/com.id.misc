@@ -3,6 +3,7 @@ package com.id.misc.singleton;
 /**
  * Singleton via inner class.
  * Thread safe.
+ * Lazy.
  *
  * @author idanilov
  */

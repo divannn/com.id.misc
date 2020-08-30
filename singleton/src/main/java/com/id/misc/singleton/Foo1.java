@@ -5,7 +5,7 @@ package com.id.misc.singleton;
  * 1) final class to forbid extention.
  * 2) Throwing an exception from the constructor prevents users to use reflection to create a second instance.
  * 3) Thread safe.
- *
+ * 4) Not lazy.
  * @author idanilov
  */
 /*When you have a very large object or heavy construction code AND also have other accessible 
